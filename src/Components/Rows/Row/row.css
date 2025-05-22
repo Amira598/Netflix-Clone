@@ -1,0 +1,35 @@
+
+.row {
+    color: #fff;
+    margin-left:  20px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+  }
+  .row_posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 20px;
+    /* scrollbar-width: none;  */
+  }
+  .row_posters::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .row_poster {
+    max-height: 120px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+    border-radius: 4px;
+  }
+  .row_poster:hover {
+    transform: scale(1.08);
+  }
+  .row_posterLarge {
+    max-height: 250px;
+    /* margin-top: 20%; */
+  }
